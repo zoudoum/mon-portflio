@@ -1,0 +1,96 @@
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "|";
+    position: absolute;
+    
+   
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Youtuber";
+    }
+    21%,40%{
+        content: "Blogger";
+    }
+    41%,60%{
+        content: "Developer";
+    }
+    61%,80%{
+        content: "Designer";
+    }
+    81%,100%{
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.container-header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#cont img{
+    height: 400px;
+}
+#cont-div p{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#svgr{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bi-linkedin path {
+    fill: rgb(4, 4, 179); 
+  }
+ .bi-github{
+    fill: rgb(0, 0, 0); 
+ }
+
+ .bi-twitter{
+    fill: rgb(34, 38, 235); 
+ }
+
+ .bi-envelope-at-fill{
+    fill: rgb(240, 49, 49); 
+ }
+
+

@@ -1,0 +1,25 @@
+.container-nav
+{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+   
+
+}
+#p-nav{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30px;
+   
+}
+#svg-nav{
+    margin-right: 30px;
+}
+.sticky-menu {
+    /* Styles du menu lorsqu'il est collant (scroll) */
+    background-color: #f5f5f5;
+    /* Ajoutez les styles souhaités pour le background */
+  }

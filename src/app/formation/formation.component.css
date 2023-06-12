@@ -1,0 +1,25 @@
+.cont-form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#h1form{
+    text-align: center;
+}
+.cardbody{
+    border: 1px solid black;
+    border-radius: 5px; /* Arrondi des coins de la bordure */
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    font-size: 18px;
+}
+.cardbodyfocus{
+    background-color: yellow;
+}
+
+.cardbodyblur{
+    background-color: yellow;
+    
+}

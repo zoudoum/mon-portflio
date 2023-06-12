@@ -1,0 +1,10 @@
+.cont-rea{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+svg{
+   margin-right: 10px;
+   
+}

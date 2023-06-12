@@ -1,0 +1,15 @@
+.cont-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#dv1{
+    flex-basis: 700px;
+    text-justify: auto;
+    margin-left: 20px;
+    flex-grow: 2;
+    font-size: large;
+    
+   
+}
