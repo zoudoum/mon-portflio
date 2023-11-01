@@ -5,7 +5,8 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-RUN npm run build --prod
+RUN npm run build --omit=dev
+
 
 # Étape 2 : Créer une image légère pour l'exécution
 FROM nginx:alpine
