@@ -1,15 +1,36 @@
 .cont-foot{
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    justify-content: space-around;
     align-items: center;
+   
+    animation: fadeInWithDelay 0.5s ease-in-out 0.5s both;
+    
     
 }
 #dv1{
-    flex-basis: 700px;
+   
     text-justify: auto;
-    margin-left: 20px;
-    flex-grow: 2;
-    font-size: large;
+    margin-left: 15px;
+    
+    font-size: 16px;
     
    
 }
+#imgf{
+  animation: fadeInWithDelay 1s ease-in-out 1s both;
+    
+}
+@keyframes fadeInWithDelay {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -7,7 +7,7 @@
   .skill-name{
     font-size: 18px;
     font-weight: 700;
-    color: #000000;
+    
     text-transform: uppercase;
     margin: 20px 0;
   }
@@ -30,7 +30,7 @@
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
-    background: #f1f1f1;
+    background: #b68787;
     border-radius: 4px;
     font-size: 12px;
     top: -35px;
@@ -43,8 +43,8 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #f1f1f1;
-    top: -20px;
+    background: #b68787;
+    top: -15px;
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
@@ -60,12 +60,32 @@
   }
 
   .cont-skill{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
+    animation: fadeInWithDelay 0.3s ease-in-out 0.5s both;
   }
   #h1-comp
   {
     text-align: center;
     font-size: 30px;
+    margin-top: 30px;
+    animation: fadeInWithDelay 0.5s ease-in-out 0.5s both;
   }
+  @keyframes fadeInWithDelay {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  

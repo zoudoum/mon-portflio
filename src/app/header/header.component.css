@@ -1,61 +1,30 @@
-.animated-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
+.wrapper {
+  
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
-.animated-text span{
-    position: relative;
-}
-
-.animated-text span::before{
-    content: "Youtuber";
-    color: #ff7f50;
-    animation: words 20s infinite;
-}
-
-.animated-text span::after{
-    content: "|";
-    position: absolute;
-    
-   
-    background-color: #2f3542;
-    border-left: 2px solid #ff7f50;
-    right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to{
-        border-left: 2px solid #ff7f5000;
-    }
-}
-
-@keyframes words {
-    0%,20%{
-        content: "Youtuber";
-    }
-    21%,40%{
-        content: "Blogger";
-    }
-    41%,60%{
-        content: "Developer";
-    }
-    61%,80%{
-        content: "Designer";
-    }
-    81%,100%{
-        content: "Gamer";
-    }
+.typing-demo {
+  width: 80%; /* Par exemple, définissez la largeur à 80% de l'écran disponible */
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 15px;
 }
 
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 8px);
-    }
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 .container-header
 {
@@ -64,6 +33,8 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
+    
 }
 #cont img{
     height: 400px;
@@ -72,10 +43,18 @@
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#cont-div{
+  
+  width: 500px;
+}
 
 #svgr{
     display: flex;
     justify-content: space-around;
+    animation: fadeInWithDelay 0.2s ease-in-out 0.5s both;
+}
+#cont{
+  animation: fadeInWithDelay 0.3s ease-in-out 1.5s both;
 }
 
 .bi-linkedin path {
@@ -92,5 +71,20 @@
  .bi-envelope-at-fill{
     fill: rgb(240, 49, 49); 
  }
+
+ @keyframes fadeInWithDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 

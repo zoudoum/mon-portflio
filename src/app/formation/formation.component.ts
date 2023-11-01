@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { CommunicationService } from '../communication.service';
+import { ScrollServiceService } from '../scroll-service.service';
 
 @Component({
   selector: 'app-formation',
@@ -8,30 +10,62 @@ import { Component } from '@angular/core';
 export class FormationComponent {
   etat:boolean=false
   etatdeux:boolean=false
+  @Input() background: string;
+@Input() color: string;
+etatSvg:string="white"
+  etatText:string="black"
+  showElement: boolean = false; 
+constructor(private communicationService: CommunicationService,private scroll:ScrollServiceService) {}
+ngOnInit() {
+  this.communicationService.svgNavClick$.subscribe(() => {
+    if(this.etatSvg=='white')
+    {
+    this.etatSvg='black'
+    this.etatText="white"
+    }
+    else
+    {
+    this.etatSvg='white'
+    this.etatText="black"
+
+    }
+  });
+  this.scroll.svgNavClick1$.subscribe(()=>{
+    this.showElement=true;
+
+  });
+}
   onCardFocusHandler() {
-    console.log('Card focused!');
-    this.etat=true
+    if(this.etatSvg=='white'){
+      console.log('Card focused!');
+      this.etat=true
+    }
+   
   }
   onCardMouseLeave(){
+    if(this.etatSvg=='white'){
      this.etat=false
+    }
   }
   getEtat(){
     if(this.etat==true)
-    return "#bbbcff"
+    return "#eeeae5"
     else
     return "white"
   }
 
   onCardFocusHandlerdeux() {
-    console.log('Card focused!');
+    if(this.etatSvg=='white')
+   
     this.etatdeux=true
   }
   onCardMouseLeavedeux(){
+    if(this.etatSvg=='white')
      this.etatdeux=false
   }
   getEtatdeux(){
     if(this.etatdeux==true)
-    return "#bbbcff"
+    return "#eeeae5"
     else
     return "white"
   }

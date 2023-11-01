@@ -1,43 +1,46 @@
-<h1 id="h1form">Formation</h1>
-<div class="cont-form">
 
-    <div id="card1" (mouseenter)="onCardFocusHandler()" (mouseleave)="onCardMouseLeave()" [ngStyle]="{
-        background:getEtat()
-    }">
-      <div class="cardbody" >
-        <div class="card-body">
-          <h5 class="card-title">Licence 3 informatique</h5>
-          <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-          </svg> Universite Cheikh Anta Diop</p>
-          <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
-            <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
-            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-          </svg> 2022-2023</p>
-          <p class="card-text">Mention bien</p>
-          
-        </div>
-      </div>
+
+
+<h1 style="text-align: center; margin-top: 30px;" id="h1tt"  *ngIf="showElement">Formation</h1>
+<div class="cont-rea" appScrollHeightFormation>
+<div class="card" style="width: 18rem;" (mouseenter)="onCardFocusHandler()" (mouseleave)="onCardMouseLeave()" [ngStyle]="{
+  background:getEtat()
+}" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+    <div class="card-body">
+      <h5 class="card-title">Licence 3 informatique
+    </h5>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+      </svg> Universite Cheikh Anta Diop</h6>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg> 2021-2022</h6>
+
+      <h3 class="card-subtitle mb-2 "> Mention Bien</h3>
+      
+      
+     
     </div>
-    
-        <div id="card2" (mouseenter)="onCardFocusHandlerdeux()" (mouseleave)="onCardMouseLeavedeux()" [ngStyle]="{
-            background:getEtatdeux()
-        }">
-          <div class="cardbody card3">
-            <div class="card-body">
-              <h5 class="card-title">Mater 1 informatique(en cours)</h5>
-              <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-              </svg> Universite Cheikh Anta Diop</p>
-              <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
-                <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-              </svg> 2022-2024</p>
-              
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
+  </div>
+  <div class="card" style="width: 18rem;" (mouseenter)="onCardFocusHandlerdeux()" (mouseleave)="onCardMouseLeavedeux()" [ngStyle]="{
+    background:getEtatdeux()
+}" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+    <div class="card-body">
+      <h5 class="card-title">Mater 1 informatique</h5>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+      </svg> Universite Cheikh Anta Diop</h6>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg>2023</h6>
+     
+      
+      
+    </div>
+  </div>
+  
 </div>

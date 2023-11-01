@@ -1,13 +1,61 @@
-<h1 style="text-align: center;">Mes realisations</h1>
-<div class="cont-rea">
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Projet académique (Application mobile)
+<h1 style="text-align: center; margin-top: 30px;" id="h1-rea" *ngIf="showElement" >Mes realisations</h1>
+<div class="cont-rea" appScrollHeightRealisation [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+      <h5 class="card-title">Développement d'une Application Wallet avec Spring Boot
     </h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+      <h6 class="card-subtitle "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
         <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-      </svg> 2022-2023</h6>
+      </svg> 2023</h6>
+      <p class="card-text">J'ai réalisé un projet de développement 
+        de la partie back-end axée sur la gestion électronique de l'argent en utilisant Spring Boot. 
+        Notre contribution comprenait la conception d'une architecture solide, l'automatisation des 
+        tests et du déploiement grâce à Jenkins, Docker et Kubernetes, ainsi que la rédaction d'une 
+        documentation technique complète. Cette expérience nous a permis de renforcer nos compétences 
+        en génie logiciel et de nous
+         familiariser avec les meilleures pratiques de développement et de déploiement.
+        </p>
+      <a href="https://github.com/domoudl/wallet-msir-jour" class="card-link">github</a>
+     
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+      <h5 class="card-title">Projet académique de Développement .NET</h5>
+      <h6 class="card-subtitle mb-2 y sp"  ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg> <span > 2023</span></h6>
+      <p class="card-text">Conception, développement et déploiement d'une application WPF
+        et ASP.NET de gestion des commandes.
+        </p>
+      <a href="#" class="card-link">github</a>
+      
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+      <h5 class="card-title">Plateforme d'Orientation pour Patients COVID-19 
+    </h5>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg> 2023</h6>
+      <p class="card-text">Dans le cadre d'un projet académique, j'ai réalisé un projet visant à aider les patients COVID-19 à trouver les centres de traitement les plus proches. Pour ce faire, j'ai conçu et développé une plateforme composée d'un API RestFul en utilisant Spring Boot et d'une application cliente Windows Forms en C# (WPF).
+        </p>
+      <a href="https://github.com/zoudoum/api_gestion_covid19" class="card-link">github</a>
+     
+    </div>
+  </div>
+<div class="card" style="width: 18rem;">
+    <div class="card-body" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
+      <h5 class="card-title">Projet académique (Application mobile)
+    </h5>
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg> 2022</h6>
       <p class="card-text">Conception, développement et maintenance d'une application 
         mobile et web de banque mobile pour les clients et l'administration
         lors de mon mémoire de fin cycle en licence 3.
@@ -17,31 +65,18 @@
     </div>
   </div>
   <div class="card" style="width: 18rem;">
-    <div class="card-body">
+    <div class="card-body" [ngStyle]="{ 'background': etatSvg, 'color': etatText }">
       <h5 class="card-title">Projet de développement web</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+      <h6 class="card-subtitle mb-2 "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
         <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-      </svg> 2022-2023</h6>
+      </svg> 2022</h6>
       <p class="card-text">Mise en place d’une application web pour le partage des ressources
         pédagogiques avec PHP</p>
       <a href="#" class="card-link">github</a>
       
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Projet académique de Développement .NET</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary sp"  ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
-        <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
-        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-      </svg> <span >2022-2023</span></h6>
-      <p class="card-text">Conception, développement et déploiement d'une application WPF
-        et ASP.NET de gestion des commandes.
-        </p>
-      <a href="#" class="card-link">github</a>
-      
-    </div>
-  </div>
+  
 
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollServiceService } from '../scroll-service.service';
 
 @Component({
   selector: 'app-competence',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./competence.component.css']
 })
 export class CompetenceComponent {
-
+  showElement: boolean = false; 
+  constructor(private scroll:ScrollServiceService){}
+  ngOnInit() {
+    this.scroll.svgNavClick$.subscribe(()=>{
+      this.showElement=true;
+  
+    });
+  
+  }
+ 
 }

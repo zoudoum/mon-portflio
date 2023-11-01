@@ -9,6 +9,12 @@ import { CompetenceComponent } from './competence/competence.component';
 import { FormationComponent } from './formation/formation.component';
 import { RealisationComponent } from './realisation/realisation.component';
 import { FooterComponent } from './footer/footer.component';
+import { CommonModule } from '@angular/common';
+import { ScrollHeightDirective } from './scroll-height.directive';
+import { ScrollHeightFormationDirective } from './scroll-height-formation.directive';
+import { ScrollHeightRealisationDirective } from './scroll-height-realisation.directive';
+import { ScrollHeightFooterDirective } from './scroll-height-footer.directive';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +24,12 @@ import { FooterComponent } from './footer/footer.component';
     CompetenceComponent,
     FormationComponent,
     RealisationComponent,
-    FooterComponent
+    FooterComponent,ScrollHeightDirective, ScrollHeightFormationDirective, ScrollHeightRealisationDirective, ScrollHeightFooterDirective
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,37 @@
+
+.dvcorps{
+    width: 100%;
+    
+   
+}
+.container-nav
+{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    align-items: center;
+   
+}
+#p-nav{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30px;
+   
+   
+}
+#svg-nav{
+    margin-right: 30px;
+    
+}
+.sticky-menu {
+    /* Styles du menu lorsqu'il est collant (scroll) */
+   background-color: rgb(126, 123, 123);
+    /* Ajoutez les styles souhaités pour le background */
+  }
+
+  
+
+  

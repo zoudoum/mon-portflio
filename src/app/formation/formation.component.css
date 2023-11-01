@@ -1,25 +1,40 @@
-.cont-form{
-    display: flex;
-    justify-content: space-around;
+.cont-rea{
+    display: none;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-#h1form{
-    text-align: center;
-}
-.cardbody{
-    border: 1px solid black;
-    border-radius: 5px; /* Arrondi des coins de la bordure */
-    padding: 10px;
-    height: 200px;
-    width: 400px;
-    font-size: 18px;
-}
-.cardbodyfocus{
-    background-color: yellow;
-}
-
-.cardbodyblur{
-    background-color: yellow;
+    animation: fadeInWithDelay 0.5s ease-in-out 0.5s both;
     
 }
+svg{
+   margin-right: 10px;
+   
+}
+h3{
+    font-size: 18px;
+    margin-left: 45px;
+}
+
+#h1tt{
+  animation: fadeInWithDelay 0.5s ease-in-out 0.5s both;
+}
+
+
+@keyframes fadeInWithDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+    
+     

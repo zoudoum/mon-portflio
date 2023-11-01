@@ -1,5 +1,5 @@
-<h1 id="h1-comp">Competences</h1>
-<div class="cont-skill">
+<h1 id="h1-comp"  *ngIf="showElement" class="h1-class">Competences</h1>
+<div class="cont-skill" appScrollHeight>
 <div class="skills">
     <div class="skill">
       <div class="skill-name">HTML</div>
@@ -43,7 +43,13 @@
         <div class="skill-per" per="80%" style="max-width:80%"></div>
       </div>
     </div>
-  
+    <div class="skill">
+      <div class="skill-name">Spring Boot</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="60%" style="max-width:60%"></div>
+      </div>
+    </div>
+     
     <div class="skill">
       <div class="skill-name">JEE</div>
       <div class="skill-bar">
