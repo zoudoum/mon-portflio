@@ -3,7 +3,7 @@ FROM node:14 AS build
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm install
+RUN NODE_ENV=development npm i
 COPY . .
 RUN npm run build -- --prod
 
